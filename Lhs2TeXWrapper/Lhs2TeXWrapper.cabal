@@ -1,8 +1,12 @@
 name:           Lhs2TeXWrapper
-version:        0.1
+version:        0.1.0.0
+synopsis:       Wrapper for lhs2TeX, used by Eclipse.
+license:        PublicDomain
+author:         deathInTheAfternoon
+maintainer:     deathInTheAfternoon@gmail.com
+category:       Tutorial
 cabal-version:  >=1.2
 build-type:     Simple
-author:         nthakur
 
 executable Lhs2TeXWrapper
   hs-source-dirs:  src
