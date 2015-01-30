@@ -219,7 +219,7 @@ our 'setter'. If the function is applied to 'age' of 'Member' and it fails, then
 So our signature for 'setter' should be: |setFailing :: (v -> Maybe v) -> o -> Maybe o|.
 
 In theory, we would now have to write (following SPJ on SkillsMatter, collecting everything we've learned, using 'mod' for setter which modifies the value):
-\being{spec}
+\begin{spec}
 data Lens o v = Lens 
                         {   get :: o -> v,
                             set :: v -> o -> o,
@@ -227,7 +227,7 @@ data Lens o v = Lens
                             modM :: (v -> Maybe v) -> o -> Maybe o }                                    
 \end{spec}
  It gets worse when we ask 'what about return values that model side-effects?':
-\being{spec}
+\begin{spec}
 data Lens o v = Lens 
                         {   get :: o -> v,
                             set :: v -> o -> o,
