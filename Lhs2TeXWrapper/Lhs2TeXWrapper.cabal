@@ -1,0 +1,12 @@
+name:           Lhs2TeXWrapper
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         nthakur
+
+executable Lhs2TeXWrapper
+  hs-source-dirs:  src
+  main-is:         Main.lhs
+  build-depends:   base >= 4, process, cmdargs >= 0.10.12, split, filepath
+  ghc-options:     -Wall -rtsopts
+
